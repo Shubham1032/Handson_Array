@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Find the Product.</h2>
+    <pre>
+
+        const Find_Prod = (array, N) => 
+        {
+         
+            var product=1;
+          for(i = 0; i < array.length;i++ ){
+           
+           product=product*array[i];
+           
+           
+           
+          }
+          return product;
+           
+        
+        };
+         
+        
+    </pre>
+    <h2>Find the Sum.
+    </h2>
+    <pre>
+        
+const Find_Sum = (array, N) => 
+{
+var sum=0;
+  for(i = 0; i < array.length;i++ ){
+   sum=sum+array[i];
+  }
+  return sum;
+};
+ 
+
+    </pre>
+    <h2>Count Occurrences
+    </h2>
+    <pre>
+        
+const findCount = (N, K, Arr) => 
+{
+  
+	  var count=0;
+ 
+ for(i=0;i<N;i++){
+   if(Arr[i]= = K){
+     count++
+   }
+ }
+	 return count;
+
+};
+ 
+
+    </pre>
+    <h2>Even Odd
+    </h2>
+    <pre>
+        
+const findEvenOdd = (N, Arr) => 
+{
+ 
+
+  var even=0;
+  var  odd=0;
+  let Arr2=[];
+      
+  for(i = 0; i < Arr.length;i++ ){
+    if(Arr[i]%2===0){
+      even=even+Arr[i]
+
+}
+    else{
+      odd=odd+Arr[i]
+    
+  }
+  }
+  Arr2.push(even)
+  Arr2.push(odd)
+return Arr2;
+};
+ 
+
+    </pre>
+
+    <h2>Find whether the number is present or not
+    </h2>
+    <pre>
+        
+const Find_Num = (array,N,M) => 
+{
+  count=0;
+  for(i = 0; i < array.length;i++ ){
+    if(array[i]==M){
+      count++;
+    }
+  }
+  if(count>=1){
+    return "YES"
+  }
+  else{
+    return "NO"
+  }
+  
+};
+ 
+
+    </pre>
+    <h2>Unique Color Shirt</h2>
+    <pre>
+
+      function Unique_Shirts (arr,N) {
+  
+        var uniquenumber=0;
+        var secondarr=[];
+        var count=0;
+        for(i=0;i<N;i++){
+          
+          for(j=0;j<N;j++){
+           if(i!=j){
+             if(arr[i]==arr[j]){
+               count++;
+             }
+           }
+          }
+          secondarr.push(count);
+          count=0
+        }
+        for(i=0;i<secondarr.length;i++){
+          if(secondarr[i]===0){
+            uniquenumber++
+          }
+        }
+      
+      return   uniquenumber;
+      }
+      
+      
+    </pre>
+    <h2>Birthday Game</h2>
+    <pre>
+ 
+      function Birthday_Game(arr,D ,M) {
+ 
+        let sum=0;
+        let count=0;
+        for(i=0;i<arr.length-M+1;i++){
+          sum=0
+          for(j=i;j<M+i;j++){
+            sum=sum+arr[j]
+          }
+            if(sum==D){
+              count++
+            
+          }
+        }
+       return count;
+       }
+       
+       
+    </pre>
+</body>
+</html>
